@@ -12,7 +12,12 @@
 }
 
 body {
-    background: rgb(50, 50, 50);
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(180, 180, 180);
+    background-blend-mode: multiply;
 }
 
 .logo {
@@ -29,6 +34,7 @@ nav {
     align-items: center;
     min-height: 5vh;
     background: #1f1f1f;
+    box-shadow: 0 0 .5rem .05rem #000000;
 }
 
 .nav-links {
@@ -36,9 +42,8 @@ nav {
     justify-content: space-around;
 }
 
-.nav-links li {
+.nav-links > * {
     padding: 15px 60px;
-    display: inline-block;
     list-style: none;
 }
 
@@ -50,17 +55,6 @@ i {
     text-decoration: none;
     letter-spacing: .2rem;
     color: rgb(220, 220, 220);
-}
-
-.burger {
-    display: none;
-}
-
-.burger div {
-    width: 90px;
-    height: 12px;
-    background-color: rgb(220, 220, 220);
-    margin: 15px;
 }
 
 div.aboutme {
