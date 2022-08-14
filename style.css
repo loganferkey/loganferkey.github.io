@@ -4,7 +4,7 @@
 }
 
 * {
-    font-size: 72px;
+    font-size: 1.1rem;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,21 +12,22 @@
 }
 
 body {
-    background: rgb(65, 65, 65);
+    background: rgb(50, 50, 50);
 }
 
 .logo {
-    width: 160px;
-    height: 160px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    box-shadow: 1px 1px 5px 5px black;
+    display: flex;
+    align-items: center;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 7vh;
+    min-height: 5vh;
     background: #1f1f1f;
 }
 
@@ -47,7 +48,7 @@ i {
 
 .nav-links a {
     text-decoration: none;
-    letter-spacing: 4px;
+    letter-spacing: .2rem;
     color: rgb(220, 220, 220);
 }
 
@@ -62,8 +63,16 @@ i {
     margin: 15px;
 }
 
-@media screen and (max-width: 1024px) {
-    body {
-        display: none;
-    }
+div.aboutme {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(65, 65, 65);
+    max-width: 70vw;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+div.aboutme p {
+    color: rgb(220,220,220);
+    padding: 2rem;
 }
