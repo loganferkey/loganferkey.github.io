@@ -9,6 +9,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid blue !important; */
 }
 
 html, body {
@@ -46,20 +47,26 @@ nav {
 .nav-links {
     display: flex;
     justify-content: space-around;
-    z-index: 10;
 }
 
-.nav-links > * {
-    padding: 15px 60px;
+.nav-links li {
+    padding-left: 2rem;
     list-style: none;
 }
 
-i { color: rgb(220, 220, 220); }
+i { 
+    color: rgb(220, 220, 220); 
+}
 
 .nav-links a {
     text-decoration: none;
     letter-spacing: .2rem;
     color: rgb(220, 220, 220);
+    transition: font-size 200ms ease-in-out;
+}
+
+.nav-links a:hover {
+    font-size: 1.2rem;
 }
 
 div.aboutme {
@@ -72,14 +79,18 @@ div.aboutme {
     margin: 0 auto;
 }
 
-div.aboutme > * {
+div.aboutme * {
     color: rgb(220,220,220);
     padding: 0 3rem;
     line-height: 1.8rem;
 }
 
-div.aboutme > *:nth-child(1) {
+div.aboutme *:nth-child(1) {
     padding-top: 1rem;
+}
+
+.active-page {
+    text-shadow: 0 0 2rem #fff
 }
 
 @media (max-width: 750px) {
@@ -99,5 +110,8 @@ div.aboutme > *:nth-child(1) {
 
     div.aboutme {
         max-width: 80%;
+    }
+
+    .nav-links > * {
     }
 }
