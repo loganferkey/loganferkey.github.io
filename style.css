@@ -86,7 +86,7 @@ div.aboutme * {
 }
 
 .active-page {
-    text-shadow: 0 0 2rem #fff
+    text-shadow: 0 0 2.5rem #fff
 }
 
 .grid-container {
@@ -120,6 +120,33 @@ div.card {
 
 div.card:hover {
     transform: translateY(-3px) scale(1.025);
+}
+
+.java::before {
+    content: 'java';
+    background: darkolivegreen;
+    padding: .1rem;
+    font-weight: 900;
+    font-size: .7rem;
+    text-shadow: 0 0 .1rem black;
+}
+
+.python::before {
+    content: 'python';
+    background: linear-gradient(90deg, rgb(29, 71, 255) 0%, rgb(255, 234, 40) 100%);
+    padding: .1rem;
+    font-weight: 900;
+    font-size: .7rem;
+    text-shadow: 0 0 .1rem black;
+}
+
+.cs::before {
+    content: 'c#';
+    background: rgb(76, 0, 255);
+    padding: .1rem;
+    font-weight: 900;
+    font-size: .7rem;
+    text-shadow: 0 0 .1rem black;
 }
 
 @media (max-width: 750px) {
