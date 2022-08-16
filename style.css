@@ -18,9 +18,9 @@ html, body {
 
 body {
     background-image: url('images/background.jpg');
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     background-color: rgb(180, 180, 180);
     background-blend-mode: multiply;
 }
@@ -38,7 +38,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 5vh;
-    background: #1f1f1f;
+    background-color: #1f1f1f;
     background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(18,18,18,1) 52%, rgba(40,40,40,1) 100%);
     z-index: 999;
     text-align: center;
@@ -93,6 +93,39 @@ div.aboutme *:nth-child(1) {
     text-shadow: 0 0 2rem #fff
 }
 
+.grid-container {
+    height: 100vh;
+    max-width: 75vw;
+    margin: 0 auto;
+}
+
+.grid {
+    padding: 2rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 600px;
+}
+
+div.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2%;
+    padding: 1rem;
+    background-color: #1f1f1f;
+    background: linear-gradient(90deg, rgba(25,25,25,1) 0%, rgba(18,18,18,1) 100%, rgba(40,40,40,1) 100%);
+    color: rgb(220, 220, 220);
+
+    transition: all 150ms ease;
+}
+
+div.card:hover {
+    transform: translateY(-3px) scale(1.025);
+}
+
 @media (max-width: 750px) {
     .logo {
         display: none;
@@ -110,8 +143,5 @@ div.aboutme *:nth-child(1) {
 
     div.aboutme {
         max-width: 80%;
-    }
-
-    .nav-links > * {
     }
 }
