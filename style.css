@@ -139,26 +139,52 @@ i {
   color: var(--offwhite);
 }
 
-div.aboutme {
-  background: rgb(45, 45, 45, 90%);
-  margin: 0 auto;
-  height: 100%;
-  width: 65vw;
-  padding: 1rem;
-  color: var(--offwhite);
-  backdrop-filter: blur(.2rem);
-
-  display: flex;
-  justify-content: center;
-}
-
 .active-page {
-  text-shadow: 0 0 3.5em var(--offwhite);
+  text-shadow: 0 0 3.25em var(--offwhite);
 }
 
  /* Showing and hiding page content  */
 [data-content-block] { display: none; }
 .active[data-content-block] { display: block; }
+
+/* STYLING FOR HOME TAB */
+div.h--background {
+  background: linear-gradient(-145deg, rgb(35,35,35,95%), rgb(50,50,50,95%));
+  height: 100vh;
+  width: 65vw;
+  margin: 0 auto;
+  padding: 2.5rem;
+
+  display: flex;
+  color: var(--offwhite);
+
+  backdrop-filter: blur(.5rem);
+}
+
+.pdescriptive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-inline: 2rem;
+  width: 100%;
+}
+
+.pdescriptive > h1 {
+  font-weight: bolder;
+  letter-spacing: .05rem;
+  font-size: 1.75rem;
+  padding-bottom: 1.1em;
+}
+
+.pdescriptive > p {
+  line-height: 1.4em;
+  font-size: 1.1rem;
+}
+
+/* STYLING FOR PROJECTS TAB */
+
+/* STYLING FOR ACTIVITY PAGE */
+
 
 @media (max-width: 675px) {
   .logo {
