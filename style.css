@@ -130,7 +130,11 @@ i {
   color: var(--offwhite);
 }
 
-@media (max-width: 750px) {
+.active-page {
+  text-shadow: 0 0 3.5em var(--offwhite);
+}
+
+@media (max-width: 675px) {
   .logo {
     display: none;
   }
