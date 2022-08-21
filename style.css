@@ -105,6 +105,7 @@ header {
 .navigation--links li {
   list-style: none;
   position: relative;
+  transition: text-shadow 150ms ease-in;
 }
 
 .navigation--links li::before {
