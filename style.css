@@ -1,6 +1,10 @@
 :root {
     --mobile: 375px;
     --desktop: 1440px;
+
+    --offwhite: rgb(220, 220, 220);
+
+    font-family: sans-serif;
 }
 
 /* CSS RESET */
@@ -42,9 +46,7 @@ body {
 
 /* Make images easier to work with */
 img,
-picture,
-svg {
-  max-width: 100%;
+picture {
   display: block;
 }
 
@@ -66,3 +68,75 @@ svg {
 
 /* WEBSITE STYLING */
 
+body {
+  background-image: url('images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar {
+  padding-block: .5rem;
+  background: linear-gradient(to right, #1f1f1f, rgb(19, 19, 19), #252525);
+}
+
+.navigation--links {
+  gap: 2rem;
+}
+
+.navigation--links li {
+  list-style: none;
+  position: relative;
+}
+
+.navigation--links li::before {
+  content: '';
+  position: absolute;
+  top: 1.2rem;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--offwhite);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 100ms;
+}
+
+.navigation--links li:hover::before,
+.navigation--links li:focus::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navigation--links a {
+  text-decoration: none;
+  color: var(--offwhite);
+  letter-spacing: .2rem;
+  font-weight: 600;
+}
+
+i {
+  color: var(--offwhite);
+}
+
+@media (max-width: 750px) {
+  .logo {
+    display: none;
+  }
+
+  .navigation--links {
+    flex-direction: column;
+    gap: .5rem;
+  }
+}
