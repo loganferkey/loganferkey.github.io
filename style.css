@@ -126,7 +126,8 @@ header {
   transform-origin: left;
 }
 
-.navigation--links a {
+.navigation--links li {
+  cursor: pointer;
   text-decoration: none;
   color: var(--offwhite);
   letter-spacing: .2rem;
@@ -153,6 +154,10 @@ div.aboutme {
 .active-page {
   text-shadow: 0 0 3.5em var(--offwhite);
 }
+
+ /* Showing and hiding page content  */
+[data-content-block] { display: none; }
+.active[data-content-block] { display: block; }
 
 @media (max-width: 675px) {
   .logo {

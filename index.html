@@ -14,24 +14,24 @@
         <nav class="flex">
             <a href="https://github.com/loganferkey" target="_blank"><img class="logo" src="images/pp.png"></a>
             <ul class="navigation--links flex">
-                <li><a href="">home</a> <i class="fa-solid fa-house"></i></li>
-                <li><a href="">projects</a> <i class="fa-solid fa-code"></i></li>
-                <li><a href="">activity</a> <i class="fa-brands fa-github"></i></li>
+                <li data-tab-target="#home">home <i class="fa-solid fa-house"></i></li>
+                <li data-tab-target="#projects">projects <i class="fa-solid fa-code"></i></li>
+                <li data-tab-target="#gh-activity">activity <i class="fa-brands fa-github"></i></li>
             </ul>
         </nav>
     </header>
 
-    <div id="content">
-        <div id="home">
-
+    <div class="content--parent">
+        <div class='active' id="home" data-content-block>
+            <h1>home content</h1>
         </div>
 
-        <div id="projects">
-
+        <div id="projects" data-content-block>
+            <h1>projects content</h1>
         </div>
 
-        <div id="gh_activity">
-
+        <div id="gh-activity" data-content-block>
+            <h1>gh-activity content</h1>
         </div>
     </div>
     
