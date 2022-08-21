@@ -70,8 +70,10 @@ picture {
 
 body {
   background-image: url('images/background.jpg');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
 
 .logo {
@@ -128,6 +130,18 @@ body {
 
 i {
   color: var(--offwhite);
+}
+
+div.aboutme {
+  background: rgb(55, 55, 55, 95%);
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+  padding: 1rem;
+  color: var(--offwhite);
+
+  display: flex;
+  justify-content: center;
 }
 
 .active-page {
